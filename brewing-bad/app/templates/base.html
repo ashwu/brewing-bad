@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ META.project_title }} | North by Northwestern</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="//use.typekit.net/adk4phw.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="Chart.js"></script>
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link href='//cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='//cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+  <!-- endbuild -->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="logo">
+    <a href="//www.northbynorthwestern.com/" target="_blank"><img class="nbn-logo" src="http://media.northbynorthwestern.com.s3.amazonaws.com/media/img/nbn_logo.svg" alt=""></a>
+  </div>
+</header>
+
+
+<div id="fades">
+  <img src="img/pour.gif" alt="">
+</div>
+<p class="caption">Video by Michael Nowakowski
+</p>
+
+<!-- <div id="title">
+  <h1 class="shadow">Eat Your <em>Greens</em></h1>
+  <h2 class="shadowTwo">Two sophomores are making sonic waves in the Chicago music scene.</h2>
+  <h3 class="shadowThree">by Madeleine Kenyon</h3>
+</div> -->
+    <div id="hero">
+        <div id="headline">
+          <h1><span>Br</span>ewing <br><span class="tab">Ba</span>d</h1>
+        </div>
+        <h2>Home-brewed beer makes chemistry class actually relevant.</h2>
+        <h3>by Miranda Cawley</h3>
+       </div>
+
+<main class="container main-content">
+  {% block content %}{% endblock %}
+</main>
+
+
+<footer class="nbn-footer">
+  <div class="container">
+    <div class="credits content-block">
+      <p style="font-family: 'Proxima-Nova', Helvetica, sans-serif;"><strong>Published on March 5, 2015</strong></p>
+      <p style="font-family: 'Proxima-Nova', Helvetica, sans-serif;"><strong>Design and Development</strong>: <a href="https://twitter.com/yeamal" target="_blank">Mallory Busch</a></p>
+      <p style="font-family: 'Proxima-Nova', Helvetica, sans-serif;">&copy; 2015 <a href="http://www.northbynorthwestern.com/" target="_blank">North by Northwestern</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="../../bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script src="scripts/main.js"></script>
+
+<!-- endbuild -->
+
+</body>
+</html>

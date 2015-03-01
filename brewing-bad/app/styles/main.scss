@@ -1,0 +1,386 @@
+@import 'bourbon/dist/bourbon';
+@import 'neat/app/assets/stylesheets/neat';
+
+$grand-header-image-url: '../img/raise.jpeg';
+$banner-height: 900px;
+
+@import 'nbnteractive-styles/initialize';
+@import 'nbnteractive-styles/theme/theme';
+
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+h1 {
+	@include sans-serif;
+	font-size: 5em;
+	margin-bottom: 5px;
+	margin-top: 40px;
+	width: 100%;  
+	text-align: center;
+	font-family: Gill Sans MT;
+}
+
+h2 {
+	@include sans-serif;
+	font-size: 1.75em;
+	font-weight: 500;
+	line-height: 1.25em;
+	width: 100%;
+	text-align: center;
+	font-family: Gill Sans MT;
+}
+
+h3{
+	font-size: 1.25em;
+	margin-top: 15px;
+	font-weight: 200px;
+	width: 100%;
+	text-align: center;
+	font-family: Gill Sans MT;
+}
+
+q {
+	@include sans-serif;
+	line-height: 1.75;
+	font-size: .85em;
+	font-weight: 300;	
+  	margin-top: 6.5em;
+  	border-top: 2px solid #fed503;
+  	border-bottom: 2px solid #fed503;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	@include media($default-768) {
+		font-size: 1.5em;
+		margin-top: 3.5em;
+		border-left: 5px solid #fed503;
+		padding-left: 15px;
+		border-right: 5px solid #fed503;
+  		padding-right: 15px;
+  		border-top: none;
+  		border-bottom: none;
+  		padding-top: none;
+  		padding-bottom: none;
+  	}
+}
+
+a.textLink{
+	text-decoration: none;
+	color: black;
+	border-bottom: 1px solid #fed503;
+}
+
+a.textLink:hover{
+	text-decoration: none;
+	color: #fed503;
+	border-bottom: 1px solid #fed503;
+}
+
+#midQuote{
+	text-align: center;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.right {
+	@include sans-serif;
+	line-height: 1.75;
+	font-size: 1.5em;
+	text-align: right; 
+	font-weight: 300;	
+  	border-left: 1px solid grey;
+  	padding-left: 15px;
+  	border-right: none;
+  	padding-right: none;
+}
+
+hr {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1px;
+	border: 0px;
+	background-color: grey;
+}
+
+.banner {
+	z-index: 0;
+}
+
+.highlight-opaque {
+	background-color: rgba(0, 0, 0, 0.5);
+	box-shadow: -0.2em 0 0 rgba(0, 0, 0, 0.5), 0.2em 0 0 rgba(0, 0, 0, 0.5);
+  	color: white;
+  	line-height: 1.65;
+ 	 padding: .25em 0; 
+  	// font-weight: 300;
+}
+
+.main-content {
+	position: relative;
+	margin-top: 1em;
+	z-index: 10;
+	@include media($default-768) { //in main.css I changed each '768' to '950'
+  	margin-top: -160px;
+  	margin-bottom: 40px;
+  }
+
+}
+
+.content-block:last-child{
+	margin-left: 0;
+	@include media($default-768) {
+		 margin-left: 17.05961%;
+	}
+}
+
+.prose {
+	margin-top: 40px;
+	margin-bottom: 120px;
+	@include media($default-768) {
+		margin-top: 200px;
+		margin-bottom: 20px;
+	}
+}
+
+#title {
+	z-index: 10;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: black;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	@include media($default-768) {
+	margin-bottom: 0px;
+	margin-top: -320px;
+	text-align: center;
+	color: white;
+
+    h1{
+    	font-size: 5em;
+		font-weight: 800;
+		margin-bottom: 5px;
+    }
+
+    h2{
+    	font-size: 1.75em;
+		font-weight: 500;
+		line-height: 1.25em;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+    }
+
+  }	
+
+}
+
+  p {
+    margin-bottom: .75em;
+    margin-top: .75em;
+    font-family: Georgia;
+    font-size: 1.125em;
+    line-height: 1.8em;
+  }
+
+
+#fades { 
+	width: 100%;
+ }
+#fades img { 
+	width: 100%; 
+}
+
+#title {
+	width: 100%;
+}
+
+.content{
+	padding: 0px;
+	@include media($default-768) {
+	}
+}
+
+.caption {
+	font-family: Proxima-Nova,Helvetica,sans-serif;
+	color: #bbb;
+	font-size: .8em;
+	font-weight: 300;
+	text-align: right;
+	margin-right: 15px;
+	top: 5px;
+}
+
+.nbn-footer {
+	margin-top: 100px;
+	height: initial;
+	@include media($default-768) {
+		height: initial;
+ 		margin-top: 20px;
+	}
+}
+
+.credits {
+ padding-bottom: .5em;
+ padding-top: .5em;
+}
+
+.shadow{
+	text-shadow:none;
+	@include media($default-768) {
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+	}
+}
+
+.shadowTwo{
+	text-shadow:none;
+	@include media($default-768) {
+	text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+	}
+}
+
+.shadowThree{
+	text-shadow:none;
+	@include media($default-768) {
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+	}
+}
+
+body {
+	margin: 0;
+}
+
+#hero {
+	width: 100%;
+	float:center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.poster{
+	width: 100%;
+	height: auto;
+}
+
+#headline p {
+	margin: 0 auto 0 auto;
+	font-size: 6em;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+span{
+	border: 1px dashed black;
+	background-color:#fde4c7;
+	padding: 2px;
+/*	color: white;*/
+}
+
+span.tab{
+	margin-left: 100px;
+}
+
+.deck {
+	font-family: "Open Sans";
+	font-size: 1.1em;
+	text-align: center;
+	padding-bottom: 40px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.story {
+	width: 55%;
+	margin: .75em auto .75em auto;
+	font-family: "Georgia";
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.sidebar {
+	padding-top: 0.2em; 
+	text-align: center;
+	text-decoration: underline;
+}
+
+#recipes {
+	width: 80%;
+	margin: .75em auto .75em auto;
+/*	font-size: 1.5em;*/
+	line-height: 1.8em;
+	background-color: #fde4c7;
+	height:auto;
+	overflow:auto;
+	border: 1px dashed black;
+}
+
+.recipe-container {
+	width: 100%;
+}
+
+.subhead {
+	font-weight: bold;
+	font-family: "Oswald";
+	letter-spacing:	0.15em;
+	text-transform: uppercase;
+}
+
+.section {
+	width: 32%;
+	display: inline-block;
+}
+
+.icon {
+	width: 75%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 2em;
+}
+
+.info{
+	width: 90%;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px dashed #676767;
+	clear: both;
+	padding-top: 15px;
+}
+
+#rye, #pumpkin{
+	display:none;
+}
+
+h4 {
+	font-size: 1.3em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: "Proxima-Nova";
+	letter-spacing:	0.15em;
+	text-transform: uppercase;
+	line-height: 1.8em;
+}
+
+a {
+	text-decoration: none;
+	color: #ff9d55;
+}
+
+a:hover{
+	text-decoration: underline;
+}
