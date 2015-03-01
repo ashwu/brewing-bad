@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+}
+
+.masthead {
+	height: 30px;
+	background-color: white;
+}
+
+#hero {
+	width: 100%;
+	float:center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.poster{
+	width: 100%;
+	height: auto;
+}
+
+#headline p {
+	margin: 0 auto 0 auto;
+	font-size: 6em;
+	font-family: "Oswald";
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+span{
+	border: 1px dashed black;
+	background-color:#fde4c7;
+	padding: 2px;
+/*	color: white;*/
+}
+
+span.tab{
+	margin-left: 100px;
+}
+
+.deck {
+	font-family: "Open Sans";
+	font-size: 1.1em;
+	text-align: center;
+	padding-bottom: 40px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.story {
+	width: 55%;
+	margin: .75em auto .75em auto;
+	font-family: "Georgia";
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+.sidebar {
+	padding-top: 0.2em; 
+	text-align: center;
+	text-decoration: underline;
+}
+
+#recipes {
+	width: 80%;
+	margin: .75em auto .75em auto;
+/*	font-size: 1.5em;*/
+	line-height: 1.8em;
+	background-color: #fde4c7;
+	height:auto;
+	overflow:auto;
+	border: 1px dashed black;
+}
+
+.recipe-container {
+	width: 100%;
+}
+
+.subhead {
+	font-weight: bold;
+	font-family: "Oswald";
+	letter-spacing:	0.15em;
+	text-transform: uppercase;
+}
+
+.section {
+	width: 32%;
+	display: inline-block;
+}
+
+.icon {
+	width: 75%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 2em;
+}
+
+.info{
+	width: 90%;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px dashed #676767;
+	clear: both;
+	padding-top: 15px;
+}
+
+#rye, #pumpkin{
+	display:none;
+}
+
+h2 {
+	font-size: 1.3em;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: "Oswald";
+	letter-spacing:	0.15em;
+	text-transform: uppercase;
+	line-height: 1.8em;
+}
+
+a {
+	text-decoration: none;
+	color: #ff9d55;
+}
+
+a:hover{
+	text-decoration: underline;
+}
