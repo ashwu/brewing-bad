@@ -8,7 +8,7 @@ body {
 }
 
 #hero {
-	width: 100%;
+	width: 90%;
 	float:center;
 	margin-right: auto;
 	margin-left: auto;
@@ -39,12 +39,16 @@ span.tab{
 	margin-left: 100px;
 }
 
-.deck {
+h2 {
 	font-family: "Open Sans";
 	font-size: 1.1em;
 	text-align: center;
 	padding-bottom: 40px;
 	background-color: rgba(255,255,255,0.5);
+}
+
+h3{
+	text-align: center;
 }
 
 .story {
@@ -122,4 +126,30 @@ a {
 
 a:hover{
 	text-decoration: underline;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+	#headline{
+		font-size: 0.8em;
+	}
+
+	h2{
+		font-size: 1.3em;
+	}
+
+	.story{
+		font-size: 0.85em;
+		width: 80%;
+	}
+
+	.ingredients, .directions{
+		font-size: 0.8em;
+		line-height: 1.4em;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
 }
