@@ -30,7 +30,7 @@ body {
 
 span{
 	border: 1px dashed black;
-	background-color:#fde4c7;
+	background-color:#9cba8b;
 	padding: 2px;
 /*	color: white;*/
 }
@@ -66,7 +66,7 @@ span.tab{
 	margin: .75em auto .75em auto;
 /*	font-size: 1.5em;*/
 	line-height: 1.8em;
-	background-color: #fde4c7;
+	background-color: #eaffdf;
 	height:auto;
 	overflow:auto;
 	border: 1px dashed black;
@@ -96,6 +96,10 @@ span.tab{
 	padding-bottom: 2em;
 }
 
+.ingredients, .directions{
+	font-family: sans-serif;
+}
+
 .info{
 	width: 90%;
 	font-size: 1em;
@@ -111,19 +115,9 @@ span.tab{
 	display:none;
 }
 
-h2 {
-	font-size: 1.3em;
-	text-decoration: underline;
-	font-weight: bold;
-	font-family: "Oswald";
-	letter-spacing:	0.15em;
-	text-transform: uppercase;
-	line-height: 1.8em;
-}
-
 a {
 	text-decoration: none;
-	color: #ff9d55;
+	color: #9cba8b;
 }
 
 a:hover{
